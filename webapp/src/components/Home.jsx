@@ -211,7 +211,7 @@ function Home() {
                                             role="checkbox"
                                             aria-checked={isItemSelected}
                                             tabIndex={-1}
-                                            key={row.id}
+                                            key={row.customerName}
                                             selected={isItemSelected}
                                             sx={{ cursor: 'pointer' }}
                                         >
@@ -219,8 +219,8 @@ function Home() {
                                             <TableCell align="right">{row.customerName}</TableCell>
                                             <TableCell align="right">{row.lastOrderDate}</TableCell>
                                             <TableCell align="right">{row.nextPredictedOrder}</TableCell>
-                                            <TableCell align="right">VIEW ORDERS</TableCell>
-                                            <TableCell align="right">NEW ORDER</TableCell>
+                                            <TableCell align="right" ><p style={{ color: 'red' }}>VIEW ORDERS</p></TableCell>
+                                            <TableCell align="right"><p style={{ color: 'green' }}>NEW ORDER</p></TableCell>
                                         </TableRow>
                                     );
                                 })}

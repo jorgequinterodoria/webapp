@@ -6,6 +6,10 @@ function App() {
 
   return (
     <>
+    <div style={{display:'flex', justifyContent: 'space-between', alignItems:'center',backgroundColor:'#000000', color:'white' }}>
+      <h2>Sales Prediction App</h2>
+      <img src='./logo.png' width={'80px'}/>
+    </div>
       <Home/>
     </>
   )
